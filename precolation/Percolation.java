@@ -42,7 +42,7 @@ public class Percolation {
 	// is site (row, col) open?
 	//prevents "reopening" already opened spaces
    public boolean isFull(int row, int col){
-      uf.connected(n, ((n*(row-1))+col-1))//if has path to top row-check
+      return uf.connected(n, ((n*(row-1))+col-1));//if has path to top row-check
    //consider square shape to recursively recognize bordering sites
    }  // is site (row, col) full?
     /* does the system percolate? 
