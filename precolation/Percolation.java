@@ -25,8 +25,10 @@ public class Percolation {
 	   uf.union(n*(row-1)+column-1,n*(row-1)+column-2);
 	   uf.union(n*(row-1)+column-1, n*(row-2)+column)-1;
      	docu[n*(row-1)+column-1]=1;}
-	   //documentation
-     if(count<3){
+	   
+     count++;//document count
+	  
+      if(count<3){//documentation
 	    for(int i in n) 
 	     uf.union(n+1, n*(n-1)+i-1); //precision crucial (n+1 for the last row/n for first row)
 	     uf.union(n, i-1);
