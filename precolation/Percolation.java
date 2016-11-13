@@ -2,12 +2,13 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class Percolation {
-   
+    parent=new private int[];   // parent[i] = parent of i
+    size=new private int[];
+    count=new private int; 
+   WeightedQuickUnionUF uf= new WeightedQuickUnionUF;
    public Percolation(int n){
-      this.parent=new private int[];   // parent[i] = parent of i
-      this.size=new private int[];
-      this.count=new private int; 
-      this.uf=new WeightedQuickUnionUF(n+2);
+     
+      uf=WeightedQuickUnionUF(n+2);
 
       
       //use of imported packages
