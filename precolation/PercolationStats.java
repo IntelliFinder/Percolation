@@ -16,10 +16,10 @@ public class PercolationStats extends Percolation{
 
    public static void main(int n, int T){
    
-   int []a= new int [T];
+   private int []a= new int [T];
    for(int i : T){
       Percolation p=new Percolation(n); //declare percolation variable(according to command-line arguments)
-      int count;
+      private int count;
       while(!percolates){
          open(edu.princeton.cs.algs4.StdRandom.cauchy(n-1));
          count=p.count;
