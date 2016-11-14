@@ -21,7 +21,7 @@ public class PercolationStats extends Percolation{
       Percolation p=new Percolation(n); //declare percolation variable(according to command-line arguments)
       int count;
       while(!percolates){
-         open(edu.princeton.cs.algs4.StdRandom.cauchy());
+         open(edu.princeton.cs.algs4.StdRandom.cauchy(n-1));
          count=p.count;
          }  //perform n times using methods from previous class
          a[i]=count;
